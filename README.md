@@ -8,7 +8,10 @@ DESCRIPCIÓN
 ----------------------------------------------------------------------------------------------------------------------
 Demostración de acceso a datos con JDBC implementando la arquitectura en 4 capas (Interfaz, Negocio, Datos y Conexión).
 
-Nota: Si se desea ejecutar con una versión de ApacheTomcat superior al 9, es necesario sustituir la dependencia javax por jakarta y actualizar en el web.xml la versión de la faceta (4.0 o superior)
+Nota: La versión de org.springframework.web.servlet.DispatcherServlet (ver web.xml) es incompatible con jakarta.servlet.Servlet. Por lo que para ejecutar este proyecto debe hacerlo con Apache TomCat 9 dado que Apache TomCat 10 implementa la nueva estructura JakartaEE. 
+
+Si deseas crear aplicaciones web con Spring sobre Apache TomCat 10 es mejor que utilices spring boot. (Localiza mis repositorios sobre aplicaciones web con Spring Boot 3).
+
 ----------------------------------------------------------------------------------------------------------------------
 ESPECIFICACIÓN TÉCNICA DE DESARROLLO UTILIZADO
 ----------------------------------------------------------------------------------------------------------------------
